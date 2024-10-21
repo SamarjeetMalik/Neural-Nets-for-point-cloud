@@ -1,22 +1,5 @@
 # Neural Networks for Learning Coherent Features in Point Clouds
 
-## Introduction
-Point clouds, as a form of Lagrangian representation, allow for powerful and 
-flexible applications in a large number of computational disciplines. We propose 
-a novel deep-learning method to learn stable and temporally coherent feature 
-spaces for points clouds that change over time. We identify a set of inherent 
-problems with these approaches: without knowledge of the time dimension, the 
-inferred solutions can exhibit strong flickering, and easy solutions to suppress 
-this flickering can result in undesirable local minima that manifest themselves 
-as halo structures. We propose a novel temporal loss function that takes into 
-account higher time derivatives of the point positions, and encourages mingling, 
-i.e., to prevent the aforementioned halos. We combine these techniques in a 
-super-resolution method with a truncation approach to flexibly adapt the size of 
-the generated positions. We show that our method works for large, deforming 
-point sets from different sources to demonstrate the flexibility of our approach.
-
-## Usage
-
 ### Installation
 1.  Clone repository
 2.  Install Tensorflow 1.9.0 GPU with CUDA 9.0 and Python 3.6 (newer versions are not supported!)  
@@ -66,10 +49,4 @@ point sets from different sources to demonstrate the flexibility of our approach
 **Walking Man Mesh Data**
 *   Download data: https://syncandshare.lrz.de/getlink/fiTbE56WpRWPSFD4cUSVxwxL/man_data
 *   Run inference: `python -m run_mesh config config_3d/ours.txt data 3D_data/ test man_data/ res 200`
-
-### Visualization
-The generated data is stored in the results folder of the data used (e.g. *3D_data/results/spider_v01/result_000.uni*).
-We are using a special binary *.uni* file format to write out the generated data.
-You can use [Mantaflow](http://mantaflow.com) or an online available viewer to visualize the data:
-http://lukas.prantl.it/portfolio/webgl-viewer/
 
