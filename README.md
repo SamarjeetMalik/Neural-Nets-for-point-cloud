@@ -1,5 +1,4 @@
-# Tranquil Clouds: Neural Networks for Learning Temporally Coherent Features in Point Clouds
-Lukas Prantl, Nuttapong Chentanez, Stefan Jeschke, and Nils Thuerey
+# Neural Networks for Learning Coherent Features in Point Clouds
 
 ## Introduction
 Point clouds, as a form of Lagrangian representation, allow for powerful and 
@@ -15,16 +14,6 @@ i.e., to prevent the aforementioned halos. We combine these techniques in a
 super-resolution method with a truncation approach to flexibly adapt the size of 
 the generated positions. We show that our method works for large, deforming 
 point sets from different sources to demonstrate the flexibility of our approach.
-For more information, please refer to the following: 
-https://ge.in.tum.de/publications/2020-iclr-prantl/
-
-An example generated with our method can be seen here: http://lukas.prantl.it/portfolio/tranquil-clouds/
-
-This repository contains the code for our ICLR paper 
-'[Tranquil Clouds: Neural Networks for Learning Temporally Coherent Features in Point Clouds](https://openreview.net/forum?id=BJeKh3VYDH)'. 
-The code is modified from [PointNet++](https://github.com/charlesq34/pointnet2) 
-and [PUNet](https://github.com/yulequan/PU-Net/blob/master/README.md).
-The training data was generated using [Mantaflow](http://mantaflow.com).
 
 ## Usage
 
@@ -84,19 +73,3 @@ We are using a special binary *.uni* file format to write out the generated data
 You can use [Mantaflow](http://mantaflow.com) or an online available viewer to visualize the data:
 http://lukas.prantl.it/portfolio/webgl-viewer/
 
-## Citation
-
-If our work is useful for your research, please consider citing:
-
-    @inproceedings{
-        Prantl2020Tranquil,
-        title={Tranquil Clouds: Neural Networks for Learning Temporally Coherent Features in Point Clouds},
-        author={Lukas Prantl and Nuttapong Chentanez and Stefan Jeschke and Nils Thuerey},
-        booktitle={International Conference on Learning Representations},
-        year={2020},
-        url={https://openreview.net/forum?id=BJeKh3VYDH}
-    }
-
-### Questions
-
-Please contact 'lukas.prantl@tum.de'
